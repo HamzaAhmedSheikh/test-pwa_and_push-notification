@@ -4,14 +4,14 @@
 var CACHE_NAME = 'quiz-web-new'
 var urlsToCache = [
 
-    '/static/js/1.chunk.js',
+    '/static/js/0.chunk.js',
     '/static/js/bundle.js',
     '/static/js/main.chunk.js', 
     '/static/js/2.2f87d904.chunk.js',
     '/static/js/main.4859b9f0.chunk.js',
     '/manifest.json',
     '/logo192.png',
-    "index.html",    
+    "/index.html",    
     '/favicon.ico',
     '/',
 ]
