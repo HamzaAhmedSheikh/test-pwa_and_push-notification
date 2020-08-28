@@ -1,9 +1,10 @@
 
-var CACHE_NAME = 'quiz-app' // cache name
+var CACHE_NAME = 'quiz-app' 
 
 var urlsToCache = [
  '/static/js/bundle.js',
  '/static/js/0.chunk.js',
+ '/static/js/1.chunk.js',
  '/static/css/2.11829350.chunk.css',
  '/static/js/main.chunk.js',
  '/main.fdd55bff2343a3656490.hot-update.js',    
