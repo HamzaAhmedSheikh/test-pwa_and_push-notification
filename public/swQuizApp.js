@@ -1,7 +1,7 @@
-// console.log('registered')
 
 
 var CACHE_NAME = 'quiz-web-new'
+
 var urlsToCache = [
 
     '/static/js/0.chunk.js',
