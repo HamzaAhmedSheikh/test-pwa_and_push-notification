@@ -1,4 +1,4 @@
-console.log('registered')
+// console.log('registered')
 
 
 var CACHE_NAME = 'quiz-web-new'
