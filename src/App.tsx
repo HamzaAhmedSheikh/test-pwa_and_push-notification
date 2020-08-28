@@ -8,6 +8,8 @@ function App() {
       Hello World <br />
                   <br />
       Progressive Web App and Push Notifications.
+       
+      My name is Hamza. 
     </div>
   );
 }
