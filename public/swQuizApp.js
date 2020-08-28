@@ -28,7 +28,7 @@ this.addEventListener('install', (event) => {
             })
     )
 
-})
+})  
 
 const options = {
     ignoreSearch: true,
