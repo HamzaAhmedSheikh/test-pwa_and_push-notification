@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 // import * as serviceWorker from './serviceWorker';
 
-import swQuizAppDev from './swQuizApp'
+import swQuizAppDev from './swQuizApp';
 
 ReactDOM.render(
   <React.StrictMode>
