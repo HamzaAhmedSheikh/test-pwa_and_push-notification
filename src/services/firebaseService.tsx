@@ -27,7 +27,7 @@ const firebaseConfig = {
             } else {
               // Show permission request.
               console.log('No Instance ID token available. Request permission to generate one.');
-              // Show permission UI.
+             
           
             }
           }).catch((err) => {
