@@ -1,5 +1,5 @@
 importScripts('https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js');
- importScripts('https://www.gstatic.com/firebasejs/7.18.0/firebase-messaging.js')
+importScripts('https://www.gstatic.com/firebasejs/7.18.0/firebase-messaging.js')
 
 const firebaseConfig = {
     apiKey: "AIzaSyCtw0VBeAGCi9Png2b9o2qztd-0geGrxDE",
@@ -12,6 +12,6 @@ const firebaseConfig = {
     measurementId: "G-HW4SNZW7Q0"
   };
 
-  firebaseConfig.initializeApp(firebaseConfig)
+  firebase.initializeApp(firebaseConfig);
 
   firebase.messaging();

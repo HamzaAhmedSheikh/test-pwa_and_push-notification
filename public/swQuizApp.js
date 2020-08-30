@@ -1,5 +1,3 @@
-
-
 var CACHE_NAME = 'quiz-app' 
 
 var urlsToCache = [
@@ -8,6 +6,7 @@ var urlsToCache = [
  '/static/js/1.chunk.js',
  '/static/css/2.11829350.chunk.css',
  '/static/js/main.chunk.js',
+ '/main.9f98c7de07d4b972b095.hot-update.js',
  '/manifest.json',
  '/logo192.png',
  "index.html",        
