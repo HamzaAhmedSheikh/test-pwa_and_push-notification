@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import { initNotification } from './services/firebaseService';
+import { GetToken } from './services/firebaseService';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
        
       My name is Hamza.  <br /> <br /> <br />
 
-      <button onClick={initNotification}> Configure Notification </button>
+      <button onClick={GetToken}> Configure Notification </button>
     </div>
   );
 }

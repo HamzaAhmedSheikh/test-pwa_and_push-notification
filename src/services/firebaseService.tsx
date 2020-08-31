@@ -11,31 +11,18 @@ const firebaseConfig = {
     measurementId: "G-HW4SNZW7Q0"
   };
 
-  firebase.initializeApp(firebaseConfig);
-  const messaging = firebase.messaging();
+  firebase.initializeApp(firebaseConfig)
+  const messaging = firebase.messaging()
 
-
-  export const initNotification = ()=> {
+export function GetToken() {
     Notification.requestPermission().then((permission) => {
         console.log(permission)
-        if (permission === 'granted') {
-          messaging.getToken().then((currentToken) => {
-            if (currentToken) {
-                
-                console.log(`TOKEN ==> ${currentToken}`)
-          
-            } else {
-              // Show permission request.
-              console.log('No Instance ID token available. Request permission to generate one.');
-             
-          
-            }
-          }).catch((err) => {
-            console.log('An error occurred while retrieving token. ', err);
- 
-          });
-
+        if (permission === "granted") {
+            messaging.getToken().then((token) => {
+                console.log("TOKEN: ", token)
+            }).catch((err) => {
+                console.log(err)
+            })
         }
-
-})
+    })
 }
