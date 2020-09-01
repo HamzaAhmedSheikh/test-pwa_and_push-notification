@@ -1,6 +1,6 @@
 import firebase from 'firebase';
 
-const firebaseConfig = {
+const config = {
     apiKey: "AIzaSyCtw0VBeAGCi9Png2b9o2qztd-0geGrxDE",
     authDomain: "fir-project-4db1f.firebaseapp.com",
     databaseURL: "https://fir-project-4db1f.firebaseio.com",
@@ -11,18 +11,23 @@ const firebaseConfig = {
     measurementId: "G-HW4SNZW7Q0"
   };
 
-  firebase.initializeApp(firebaseConfig)
-  const messaging = firebase.messaging()
+  firebase.initializeApp(config)
 
-export function GetToken() {
-    Notification.requestPermission().then((permission) => {
-        console.log(permission)
-        if (permission === "granted") {
-            messaging.getToken().then((token) => {
-                console.log("TOKEN: ", token)
-            }).catch((err) => {
-                console.log(err)
-            })
-        }
-    })
-}
+  export default firebase;
+
+
+  
+//   const messaging = firebase.messaging()
+
+// export function GetToken() {
+//     Notification.requestPermission().then((permission) => {
+//         console.log(permission)
+//         if (permission === "granted") {
+//             messaging.getToken().then((token) => {
+//                 console.log("TOKEN: ", token)
+//             }).catch((err) => {
+//                 console.log(err)
+//             })
+//         }
+//     })
+// }

@@ -1,9 +1,28 @@
 import React from 'react';
 import './App.css';
 
-import { GetToken } from './services/firebaseService';
+// import { GetToken } from './services/firebaseService';
+
+import firebase from './services/firebaseService'
 
 function App() {
+
+  const messaging = firebase.messaging()
+
+  messaging.requestPermission().then(() => {
+
+    return messaging.getToken()
+
+  }).then((token) => {
+
+    console.log('token ==> ', token);    
+
+  })
+
+  
+
+
+
   return (
     <div className="App">
                   <br />                  
@@ -12,7 +31,7 @@ function App() {
        
       My name is Hamza.  <br /> <br /> <br />
 
-      <button onClick={GetToken}> Configure Notification </button>
+      {/* <button onClick={GetToken}> Configure Notification </button> */}
     </div>
   );
 }
