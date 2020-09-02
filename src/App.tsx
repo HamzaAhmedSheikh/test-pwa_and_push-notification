@@ -3,27 +3,11 @@ import './App.css';
 
 // import { GetToken } from './services/firebaseService';
 
-import firebase from './services/firebaseService'
+
 
 function App() {
 
-  const messaging = firebase.messaging()
-
-  messaging.requestPermission().then(() => {
-
-    return messaging.getToken()
-
-  }).then((token) => {
-
-    console.log('token ==> ', token);    
-
-  })
-
-  
-
-
-
-  return (
+    return (
     <div className="App">
                   <br />                  
       Hello World <br />  <br />
