@@ -7,8 +7,8 @@ function App() {
 
     return (
     <div className="App">
-                  <br />                  
-      Hello World <br />  <br />
+                  <              
+      Hello World <br />  <br /> <br />
       Progressive Web App and Push Notifications. <br />
        
       My name is Hamza.  <br /> <br /> <br />      
