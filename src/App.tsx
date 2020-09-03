@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 
+import { initNotification } from './FCM'
 
 
 function App() {
@@ -12,7 +13,9 @@ function App() {
       Progressive Web App and Push Notifications. <br />
       Firebase Cloud Messaging. <br />
        
-      My name is Hamza.  <br /> <br /> <br />      
+      My name is Hamza.  <br /> <br /> <br />     
+
+      <button onClick={initNotification}> suscribe to notification  </button> 
     </div>
   );
 }
