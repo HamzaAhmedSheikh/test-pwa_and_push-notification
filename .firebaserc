@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "fir-project-4db1f"
+    "default": "fir-project-4db1f",
+    "fir-project-4db1f": "fir-project-4db1f"
   }
 }
