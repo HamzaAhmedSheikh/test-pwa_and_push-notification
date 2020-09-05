@@ -31,3 +31,10 @@ jobs:
           args: deploy --only hosting
         env:
           FIREBASE_TOKEN: ${{secrets.FIREBASE_TOKEN }}
+          
+      - name: installing surge  
+        run: npm install -g surge       
+            
+      - name: deploying on surge
+        run: surge ./build http://demo_project.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+          
